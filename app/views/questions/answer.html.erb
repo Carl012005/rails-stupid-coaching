@@ -1,0 +1,12 @@
+<h1>Stupid Coaching</h1>
+
+<div class="card border-primary mb-3">
+  <%=@question.downcase%>
+  <p>-You</p>
+</div>
+<div class="card border-primary mb-3">
+  <%= @answer %>
+  <p>-Your coach</p>
+</div>
+
+<%= link_to("Ask another question", ask_path, class:"btn btn-primary") %>
